@@ -1,228 +1,165 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EPK | Ensamble Cantaima</title>
-
-<meta name="description" content="EPK Ensamble Cantaima — Música andina colombiana con proyección internacional">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-
-:root{
---blk:#080807;
---wht:#f4f0e8;
---gold:#c8a84b;
-}
-
-body{
-background:var(--blk);
-color:var(--wht);
-font-family:'Inter',sans-serif;
-line-height:1.6;
-}
-
-section{
-padding:6rem 2rem;
-max-width:1000px;
-margin:auto;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
-
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:4rem;
-}
-
-.hero p{
-max-width:600px;
-margin-top:20px;
-}
-
-/* BOTONES */
-.btn{
-padding:12px 25px;
-margin:10px;
-text-decoration:none;
-display:inline-block;
-}
-
-.btn-gold{
-background:var(--gold);
-color:black;
-}
-
-.btn-outline{
-border:1px solid white;
-color:white;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-}
-
-/* TAGS */
-.tags{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:20px;
-}
-
-.tag{
-border:1px solid rgba(255,255,255,.2);
-padding:10px;
-}
-
-/* VIDEO */
-iframe{
-width:100%;
-height:400px;
-margin-top:20px;
-}
-
-/* ANIMACIONES */
-.fade{
-opacity:0;
-transform:translateY(40px);
-transition:.8s;
-}
-
-.fade.visible{
-opacity:1;
-transform:translateY(0);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.hero h1{font-size:2.5rem}
-.grid{grid-template-columns:1fr}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensamble Cantaima | EPK Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('URL_DE_TU_FOTO_PRINCIPAL'); background-size: cover; background-position: center; }
+        .tab-active { border-bottom: 3px solid #b91c1c; color: #b91c1c; }
+    </style>
 </head>
+<body class="bg-stone-50 text-stone-900">
 
-<body>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-red-800 uppercase">Ensamble Cantaima</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#perfil" class="hover:text-red-700 transition">Perfil</a>
+                <a href="#experiencia" class="hover:text-red-700 transition">Trayectoria</a>
+                <a href="#multimedia" class="hover:text-red-700 transition">Multimedia</a>
+                <a href="#tecnico" class="hover:text-red-700 transition">Rider</a>
+                <a href="#contacto" class="bg-red-800 text-white px-4 py-2 rounded hover:bg-red-900 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- HERO -->
-<section class="hero">
-<h1>Ensamble Cantaima</h1>
-<p>El latido del territorio pijao</p>
+    <header class="h-screen flex items-center justify-center text-center text-white hero-gradient">
+        <div class="max-w-4xl px-6">
+            <h1 class="text-6xl md:text-8xl mb-4 animate-fade-in">Ensamble Cantaima</h1>
+            <p class="text-xl md:text-2xl font-light italic tracking-widest uppercase">El latido del territorio Pijao</p>
+            <div class="mt-10">
+                <a href="#multimedia" class="border-2 border-white px-8 py-3 hover:bg-white hover:text-black transition duration-300">Ver Espectáculo</a>
+            </div>
+        </div>
+    </header>
 
-<div>
-<a class="btn btn-gold" href="https://wa.me/573154529419" target="_blank">
-Booking / Contratación
-</a>
+    <section id="perfil" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl mb-6 text-red-900">Perfil Artístico</h2>
+                <p class="text-lg leading-relaxed text-stone-700 mb-6">
+                    Fundada en Natagaima, Tolima, somos una agrupación de música andina colombiana que representa la diversidad cultural a través de arreglos contemporáneos sobre géneros tradicionales como el Pasillo, el Bambuco y la Caña.
+                </p>
+                <div class="grid grid-cols-2 gap-4 border-t border-stone-200 pt-6">
+                    <div><span class="block font-bold">Origen</span>Natagaima, Tolima</div>
+                    <div><span class="block font-bold">Formato</span>8 Músicos en escena</div>
+                </div>
+            </div>
+            <div class="bg-stone-200 h-96 rounded-lg shadow-xl overflow-hidden">
+                <img src="URL_DE_IMAGEN_BANDA" alt="Ensamble Cantaima" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
 
-<a class="btn btn-outline" href="#video">
-Ver show
-</a>
-</div>
-</section>
+    <section id="experiencia" class="py-24 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl text-center mb-16">Trayectoria Internacional</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 border border-stone-700 rounded-lg">
+                    <h3 class="text-2xl text-red-500 mb-2">Europa</h3>
+                    <p class="text-stone-400 italic">Londres (Reino Unido) & Pamplona (España)</p>
+                </div>
+                <div class="p-8 border border-stone-700 rounded-lg">
+                    <h3 class="text-2xl text-red-500 mb-2">Estados Unidos</h3>
+                    <p class="text-stone-400 italic">Gira Cultural 2016</p>
+                </div>
+                <div class="p-8 border border-stone-700 rounded-lg">
+                    <h3 class="text-2xl text-red-500 mb-2">Chile</h3>
+                    <p class="text-stone-400 italic">Circulación Internacional 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- PERFIL -->
-<section class="fade">
-<h2>Perfil artístico</h2>
+    <section id="multimedia" class="py-24 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl text-center mb-16 text-red-900">Material Audiovisual</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="aspect-video bg-black rounded-lg overflow-hidden shadow-2xl">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/TU_ID_DE_YOUTUBE" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="p-6 bg-white border-l-4 border-red-800 shadow-sm">
+                    <h4 class="font-bold uppercase">Su Majestad La Caña</h4>
+                    <p class="text-sm text-stone-500 italic">En vivo - Ibagué Fest</p>
+                </div>
+                <div class="p-6 bg-white border-l-4 border-red-800 shadow-sm">
+                    <h4 class="font-bold uppercase">Las Diabluras</h4>
+                    <p class="text-sm text-stone-500 italic">Propuesta escénica contemporánea</p>
+                </div>
+                <div class="p-6 bg-white border-l-4 border-red-800 shadow-sm">
+                    <h4 class="font-bold uppercase">Avíspese a Tocar</h4>
+                    <p class="text-sm text-stone-500 italic">Proyecto Pedagógico YouTube</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p>
-Ensamble Cantaima es una agrupación colombiana que proyecta la música andina del Tolima hacia escenarios contemporáneos, construyendo un puente entre tradición y nuevas audiencias.
-</p>
+    <section id="tecnico" class="py-24 bg-stone-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl text-center mb-12">Requerimientos Técnicos</h2>
+            <div class="flex justify-center space-x-8 mb-8 border-b border-stone-300">
+                <button onclick="showTab('audio')" id="btn-audio" class="pb-4 font-bold tab-active">Audio</button>
+                <button onclick="showTab('visual')" id="btn-visual" class="pb-4 font-bold">Iluminación / Visual</button>
+                <button onclick="showTab('staff')" id="btn-staff" class="pb-4 font-bold">Personal</button>
+            </div>
+            
+            <div id="tab-audio" class="bg-white p-8 rounded-lg shadow-sm">
+                <ul class="list-disc list-inside space-y-2 text-stone-700">
+                    <li>Sistema profesional para 8 músicos.</li>
+                    <li>Microfonía independiente para Tiple, Bandola, Guitarra y Flauta.</li>
+                    <li>Monitoreo independiente (In-ears recomendados).</li>
+                </ul>
+            </div>
+            <div id="tab-visual" class="hidden bg-white p-8 rounded-lg shadow-sm">
+                <ul class="list-disc list-inside space-y-2 text-stone-700">
+                    <li>Proyector de alta gama para contenido visual de apertura.</li>
+                    <li>Diseño de iluminación según guion escénico.</li>
+                    <li>Máquina de humo (opcional para atmósfera).</li>
+                </ul>
+            </div>
+            <div id="tab-staff" class="hidden bg-white p-8 rounded-lg shadow-sm">
+                <ul class="list-disc list-inside space-y-2 text-stone-700">
+                    <li>1 Director Artístico</li>
+                    <li>1 Road Manager</li>
+                    <li>1 Fotógrafo / Social Media</li>
+                    <li>1 Mánager General</li>
+                </ul>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="#" class="inline-block bg-stone-800 text-white px-6 py-2 rounded text-sm uppercase font-bold hover:bg-black transition">Descargar Rider Completo (PDF)</a>
+            </div>
+        </div>
+    </section>
 
-<p>
-Fundado en 2013 en Natagaima, el ensamble reúne a ocho músicos que desarrollan una propuesta escénica basada en la reinterpretación de géneros tradicionales como el bambuco, el pasillo y la rajaleña.
-</p>
+    <footer id="contacto" class="py-20 bg-red-950 text-white text-center">
+        <h2 class="text-3xl mb-8">Contrataciones</h2>
+        <div class="mb-8 space-y-2">
+            <p class="text-xl">ensamblecantaima@gmail.com</p>
+            <p class="text-xl font-bold">+57 315 452 9419</p>
+        </div>
+        <div class="flex justify-center space-x-6 text-2xl">
+            <a href="#" class="hover:text-red-400">Instagram</a>
+            <a href="#" class="hover:text-red-400">YouTube</a>
+            <a href="#" class="hover:text-red-400">Facebook</a>
+        </div>
+        <p class="mt-16 text-xs text-red-200/50 uppercase tracking-widest">© 2026 Ensamble Cantaima - Ibagué, Tolima</p>
+    </footer>
 
-<p>
-El proyecto ha desarrollado procesos de circulación en Europa y América, posicionándose como una propuesta emergente dentro del circuito de músicas tradicionales con proyección internacional.
-</p>
-</section>
-
-<!-- VIDEO -->
-<section id="video" class="fade">
-<h2>Live performance</h2>
-
-<iframe src="https://www.youtube.com/embed/rySD0A6Dl0o" frameborder="0" allowfullscreen></iframe>
-</section>
-
-<!-- SHOW -->
-<section class="fade">
-<h2>El espectáculo</h2>
-
-<p>
-El espectáculo es un recorrido escénico por la región andina colombiana, estructurado en tres dimensiones: raíz, resistencia y fiesta. Integra música en vivo, narrativa y recursos visuales.
-</p>
-</section>
-
-<!-- PARA QUIÉN -->
-<section class="fade">
-<h2>Circulación</h2>
-
-<div class="tags">
-<span class="tag">Festivals</span>
-<span class="tag">World Music Markets</span>
-<span class="tag">Cultural Programs</span>
-<span class="tag">Theatres</span>
-</div>
-</section>
-
-<!-- DATOS CLAVE -->
-<section class="fade">
-<h2>Technical info</h2>
-
-<div class="grid">
-<div>
-<p><strong>Duración:</strong> 50 min</p>
-<p><strong>Músicos:</strong> 8</p>
-<p><strong>Formato:</strong> adaptable</p>
-</div>
-
-<div>
-<p><strong>Origen:</strong> Colombia</p>
-<p><strong>Género:</strong> Música andina</p>
-<p><strong>Formato:</strong> Live act</p>
-</div>
-</div>
-</section>
-
-<!-- CONTACTO -->
-<section class="fade">
-<h2>Contact</h2>
-
-<p>Email: ensamblecantaima@gmail.com</p>
-
-<a class="btn btn-gold" href="https://wa.me/573154529419" target="_blank">
-WhatsApp directo
-</a>
-</section>
-
-<script>
-const faders=document.querySelectorAll('.fade');
-
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('visible');
-}
-});
-});
-
-faders.forEach(el=>observer.observe(el));
-</script>
-
+    <script>
+        function showTab(tabName) {
+            ['audio', 'visual', 'staff'].forEach(name => {
+                document.getElementById('tab-' + name).classList.add('hidden');
+                document.getElementById('btn-' + name).classList.remove('tab-active');
+            });
+            document.getElementById('tab-' + tabName).classList.remove('hidden');
+            document.getElementById('btn-' + tabName).classList.add('tab-active');
+        }
+    </script>
 </body>
 </html>
